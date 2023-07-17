@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple piano</title>
+    <!-- Fontawesome cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Custom css link -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="piano">
+        <div class="piano-head">
+            <div class="piano-name">
+                <h3>Simple Piano</h3>
+            </div>
+            <div class="volume-control">
+                <p><i class="fa-solid fa-volume-high volume-indicator"></i></p>
+                <input type="range" min="0" max="1" value="0.5" step="any">
+            </div>
+        </div>
+        <div class="piano-body">
+            <div class="piano-keys">
+                <ul class="keys">
+                    <li class="key white" data-key="c"><span class="key-name">C</span></li>
+                    <li class="key black" data-key="db"><span class="key-name">C#</span></li>
+                    <li class="key white" data-key="d"><span class="key-name">D</span></li>
+                    <li class="key black" data-key="eb"><span class="key-name">D#</span></li>
+                    <li class="key white" data-key="e"><span class="key-name">E</span></li>
+                    <li class="key white" data-key="f"><span class="key-name">F</span></li>
+                    <li class="key black" data-key="gb"><span class="key-name">F#</span></li>
+                    <li class="key white" data-key="g"><span class="key-name">G</span></li>
+                    <li class="key black" data-key="ab"><span class="key-name">G#</span></li>
+                    <li class="key white" data-key="a"><span class="key-name">A</span></li>
+                    <li class="key black" data-key="bb"><span class="key-name">A#</span></li>
+                    <li class="key white" data-key="b"><span class="key-name">B</span></li>
+                    <li class="key white" data-key="c4"><span class="key-name">C</span></li>
+                    <li class="key black" data-key="db4"><span class="key-name">C#</span></li>
+                    <li class="key white" data-key="d4"><span class="key-name">D</span></li>
+                    <li class="key black" data-key="eb4"><span class="key-name">D#</span></li>
+                    <li class="key white" data-key="e4"><span class="key-name">E</span></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- Custom js link -->
+    <script src="system.js"></script>
+</body>
+</html>
